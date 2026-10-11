@@ -24,3 +24,15 @@ void afficherType() {
   print("Ceci est un Film : $titre ($dureeMinutes minutes).");
 }
 }
+void main() {
+  List<Media> catalogue = [];
+
+  catalogue.add(Livre("Le Loup", "Antoine de Saint-Exupéry"));
+  catalogue.add(Livre("L'Étranger", "Albert Camus"));
+
+  catalogue.add(Film("Inception", 180));
+  catalogue.add(Film("marvile", 195));
+  for (var media in catalogue) {
+  media.afficherType();
+}
+}
